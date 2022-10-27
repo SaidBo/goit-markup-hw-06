@@ -505,10 +505,29 @@
             </li>
           </ul>
         </div>
+
+        <form class="footer-form">
+          <label class="footer-label" for="email"
+            ><span class="footer-label-text">Підпишіться на розсилку</span>
+            <input
+              class="footer-input"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+            />
+          </label>
+
+          <button class="button button-modal" type="submit">
+            Підписатися
+            <svg class="soc-icon" width="24" height="24">
+              <use href=".//images/symbol-defs.svg#icon-icon-send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
 
-    <div data-modal class="backdrop">
+    <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <form class="form">
           <p class="text-form">Залиште свої дані, ми вам передзвонимо</p>
@@ -576,7 +595,11 @@
             <a class="accord-link" href=""> Умови договору</a>
           </label>
 
-          <button class="button button-hero" type="submit">Відправити</button>
+          <div class="buttonmodal">
+            <button class="button button-modal" type="submit">
+              Відправити
+            </button>
+          </div>
         </form>
 
         <button data-modal-close class="modal-close">
