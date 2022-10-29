@@ -507,22 +507,26 @@
         </div>
 
         <form class="footer-form">
-          <label class="footer-label" for="email"
+          <label class="footer-label"
             ><span class="footer-label-text">Підпишіться на розсилку</span>
-            <input
+            <span class="confirm-input">
+              <input
               class="footer-input"
               type="email"
               name="email"
               placeholder="E-mail"
             />
+
+            <button class="button-modal" type="submit">
+              Підписатися
+              <svg class="soc-icon" width="24" height="24">
+                <use href=".//images/symbol-defs.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+            </span>
           </label>
 
-          <button class="button button-modal" type="submit">
-            Підписатися
-            <svg class="soc-icon" width="24" height="24">
-              <use href=".//images/symbol-defs.svg#icon-icon-send"></use>
-            </svg>
-          </button>
+          
         </form>
       </div>
     </footer>
@@ -532,7 +536,7 @@
         <form class="form">
           <p class="text-form">Залиште свої дані, ми вам передзвонимо</p>
 
-          <label class="form-field" for="name"
+          <label class="form-field"
             ><span class="modal-label-text">Ім'я</span>
             <span class="input-wrap"
               ><input class="input-field" type="text" name="name" id="name" />
@@ -573,7 +577,7 @@
           <label class="form-field" for="comments"
             >Коментар<textarea
               class="comment"
-              name=""
+              name="comment"
               id="comments"
               placeholder="Введіть текст"
             ></textarea>
@@ -583,7 +587,7 @@
             <input
               class="checkbox"
               type="checkbox"
-              name=""
+              name="checkbox"
               value="true"
               id="accord"
             />
